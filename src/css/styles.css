@@ -180,6 +180,6 @@ footer.ft .wrap{display:block}
 
 
 
-.logo-img{height:60px;width:auto;display:block; margin-top: 20px;}
+.logo-img{height:60px;width:auto;display:block;}
 /* .ft-brand .logo-img{height:46px} */
 @media(max-width:860px){.logo-img{height:44px; margin-top: 0;}}
