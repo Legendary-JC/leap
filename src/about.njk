@@ -1,0 +1,67 @@
+---
+layout: layouts/base.njk
+pageKey: about
+permalink: /about/
+---
+
+{% set hp = pages.about %}
+{% include "partials/page-hero.njk" %}
+
+<section>
+  <div class='wrap'>
+    <div class='eyebrow rv'>Who we are</div>
+    <h2 class='h2 rv'>The concept, vision and mission</h2>
+    <div class='grid g3'>
+      <div class='card rv'>
+        <div class='tx'>
+          <div class='ic'>📖</div>
+          <h3>The Concept</h3>
+          <p>{{ site.concept }}</p>
+        </div>
+      </div>
+      <div class='card rv'>
+        <div class='tx'>
+          <div class='ic'>🔭</div>
+          <h3>The Vision</h3>
+          <p>{{ site.vision }}</p>
+        </div>
+      </div>
+      <div class='card rv'>
+        <div class='tx'>
+          <div class='ic'>🎯</div>
+          <h3>The Mission</h3>
+          <p>{{ site.mission }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='verse'>
+  <div class='wrap rv'>
+    <div class='eyebrow' style='margin-bottom:14px'>Our foundation</div>
+    <blockquote class='long'>{{ site.scripture.text }}</blockquote>
+    <cite>{{ site.scripture.ref | upper }}</cite>
+  </div>
+</section>
+
+<section>
+  <div class='wrap split'>
+    {% include "art/network.njk" %}
+    <div>
+      <div class='eyebrow rv'>How it works</div>
+      <h2 class='h2 rv'>Collaborative by design</h2>
+      <p class='lead rv'>{{ site.blueprintIntro }}</p>
+      <div class='cta rv'>
+        <a class='btn' href="{{ '/blueprint/' | url }}">
+          Explore the Blueprint
+        </a>
+        <a class='btn o' href='{{ site.cta.url | url }}'>
+          {{ site.cta.label }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta-band.njk" %}

@@ -1,0 +1,32 @@
+<header id='hd'>
+  <div class='wrap nav'>
+    <a class='logo' href="{{ '/' | url }}"><i>L</i>{{ site.short }}</a>
+    <nav>
+      <ul>
+        {% for item in site.nav %}
+          <li>
+            <a
+              class='
+                l
+                {% if page.url == item.url %}
+                  on
+                {% endif %}
+              '
+              href='{{ item.url | url }}'
+            >{{ item.label }}</a>
+          </li>
+        {% endfor %}
+        <li>
+          <a class='btn' href='{{ site.cta.url | url }}'>
+            {{ site.cta.label }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button id='bg' class='burger' aria-label='Menu'>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>

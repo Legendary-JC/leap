@@ -1,0 +1,89 @@
+{
+  "home": {
+    "title": "Home",
+    "description": "Loveworld Economic Advancement Program (LEAP): equipping Loveworld Nation members in Canada to build careers, businesses and generational wealth.",
+    "summary": [
+      { "icon": "📖", "title": "The Concept", "text": "A comprehensive and strategic blueprint for an economic advancement program tailored to Loveworld Nation members in Canada." },
+      { "icon": "🔭", "title": "The Vision", "text": "A thriving community of economically empowered believers in Canada who build generational wealth and serve as financial pillars for the Gospel." },
+      { "icon": "🎯", "title": "The Mission", "text": "Equipping members with spiritual wisdom, practical skills and strategic networks to grow careers, launch businesses and reach financial independence." }
+    ]
+  },
+  "about": {
+    "title": "About LEAP",
+    "description": "The concept, vision and mission behind the Loveworld Economic Advancement Program in Canada.",
+    "heading": "About LEAP",
+    "lead": "Where Loveworld Nation’s spiritual principles of flourishing and dominion meet practical economic strategy for Canada."
+  },
+  "blueprint": {
+    "title": "The Blueprint",
+    "description": "Four strategic pillars: career acceleration, kingdom entrepreneurship, financial stewardship and a spiritual foundation for prosperity.",
+    "heading": "The Blueprint: Four Strategic Pillars",
+    "lead": "Structured support for members who are looking to advance, built on the expertise already within the congregation.",
+    "pillars": [
+      {
+        "number": 1, "id": "career", "short": "Career Acceleration",
+        "title": "Career Acceleration & Professional Integration",
+        "intro": "Designed to help professionals, including new immigrants and recent graduates, navigate the Canadian job market and secure high-value employment.",
+        "items": [
+          { "title": "Canadian Market Readiness", "text": "Workshops on ATS-friendly resume writing, Canadian interview culture, and optimizing appropriate social media, like LinkedIn profiles, for the local industry sectors." },
+          { "title": "Industry Mentorship Program", "text": "Pairing emerging professionals with established Christ Embassy members holding senior roles to provide industry-specific guidance and sponsorship." },
+          { "title": "Skill Upgrading Initiatives", "text": "Partnering with local institutions or offering subsidized certifications (e.g., PMP, Agile, Data Analytics) to make members highly competitive." }
+        ]
+      },
+      {
+        "number": 2, "id": "business", "short": "Kingdom Entrepreneurship",
+        "title": "Kingdom Entrepreneurship & Innovation",
+        "intro": "Designed to incubate new businesses and scale existing member-owned enterprises.",
+        "items": [
+          { "title": "The Business Incubator", "text": "A 12-week accelerator for aspiring entrepreneurs, teaching them how to register a business in Ontario, write business plans, and market to the diverse Canadian demographic." },
+          { "title": "Access to Capital & Grants", "text": "Training sessions on how to secure provincial and federal small business grants, loans, and startup funding." },
+          { "title": "B2B Networking & Kingdom Commerce", "text": "Establishing an internal business directory and hosting quarterly “Marketplace Mixers” to encourage members to do business with one another and keep wealth circulating within the church community." }
+        ]
+      },
+      {
+        "number": 3, "id": "finance", "short": "Financial Stewardship",
+        "title": "Financial Stewardship & Wealth Creation",
+        "intro": "Designed to transition members from financial survival to sustainable wealth building.",
+        "items": [
+          { "title": "Canadian Financial Literacy", "text": "Masterclasses on maximizing Canadian investment vehicles (TFSAs, RRSPs, FHSAs) and effective tax planning." },
+          { "title": "Real Estate & Asset Acquisition", "text": "Seminars led by trusted realtors and mortgage brokers on navigating the GTA real estate market, first-time homebuyer strategies, and property investment." },
+          { "title": "Debt Eradication Clinics", "text": "Confidential, structured support groups and financial counseling to help members aggressively eliminate consumer debt." }
+        ]
+      },
+      {
+        "number": 4, "id": "faith", "short": "Spiritual Foundation",
+        "title": "Spiritual Foundation for Prosperity",
+        "intro": "Designed to align all economic activities with the core teachings of Loveworld Nation.",
+        "items": [
+          { "title": "Mindset Transformation", "text": "Specialized teaching series on overcoming poverty mentalities, understanding the kingdom of wealth, and reigning in life." },
+          { "title": "Purpose-Driven Wealth", "text": "Cultivating a strong culture of partnership, emphasizing that economic advancement is ultimately for the financing of the Gospel and Kingdom expansion." }
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "title": "Resources",
+    "description": "Programs and learning tracks across the four LEAP pillars.",
+    "heading": "Programs & Resources",
+    "lead": "Every program in the blueprint, grouped by pillar. Downloadable guides and recordings will be added here as each program launches."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with the LEAP Canada team.",
+    "heading": "Get in touch",
+    "lead": "Questions about LEAP, or want to be part of the program? We would love to hear from you."
+  },
+  "getInvolved": {
+    "title": "Get Involved",
+    "description": "Join LEAP, mentor a member, share your expertise or attend an event.",
+    "heading": "Get involved",
+    "lead": "LEAP is collaborative by design. Whether you want to advance or help others advance, there is a place for you.",
+    "ways": [
+      { "icon": "🤝", "title": "Join the program", "text": "Become a member and access mentorship, workshops, the business incubator and financial masterclasses." },
+      { "icon": "🧭", "title": "Become a mentor", "text": "Established professionals holding senior roles can guide and sponsor emerging professionals in their industry." },
+      { "icon": "🎓", "title": "Share your expertise", "text": "Trainers, realtors, mortgage brokers and business owners can lead seminars, clinics and masterclasses." },
+      { "icon": "🏪", "title": "List your business", "text": "Join the internal business directory and the quarterly Marketplace Mixers to keep wealth circulating in the community." },
+      { "icon": "📅", "title": "Attend an event", "text": "Connect, learn and grow with us at our next gathering." }
+    ]
+  }
+}

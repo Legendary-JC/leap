@@ -1,0 +1,20 @@
+{
+  "name": "leap-canada-website",
+  "version": "1.0.0",
+  "description": "Loveworld Economic Advancement Program (LEAP) – Canada website",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "node -e \"require('fs').rmSync('_site',{recursive:true,force:true})\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "prettier": "^3.10.1",
+    "prettier-plugin-jinja-template": "^2.2.0",
+    "prettier-plugin-nunjucks": "^0.2.3"
+  }
+}

@@ -1,0 +1,18 @@
+<section class='band'>
+  <div class='wrap'>
+    <div class='words rv'>
+      {% for w in site.words %}
+        <span>
+          {{ w }}
+        </span>
+        {% if not loop.last %}
+          <span>·</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <h2 class='rv'>{{ site.closing.title }}</h2>
+    <p class='rv'>{{ site.closing.text }}</p>
+    <a class='btn rv' href='{{ site.cta.url | url }}'>{{ site.cta.label }}
+      today</a>
+  </div>
+</section>

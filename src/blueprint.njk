@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+pageKey: blueprint
+permalink: /blueprint/
+---
+
+{% set hp = pages.blueprint %}
+{% include "partials/page-hero.njk" %}
+
+<section>
+  <div class='wrap'>
+    <p class='lead rv'>{{ site.blueprintIntro }}</p>
+    <div class='chips rv'>
+      {% for pl in hp.pillars %}
+        <a href='#pillar-{{ pl.number }}'>Pillar {{ pl.number }} ·
+          {{ pl.short }}</a>
+      {% endfor %}
+    </div>
+    {% for pl in hp.pillars %}
+      <article id='pillar-{{ pl.number }}' class='pillar'>
+        <div class='phd rv'>
+          {% include "art/pillar-" ~ pl.number ~ ".njk" %}
+          <div>
+            <div class='num'>PILLAR {{ pl.number }}</div>
+            <h2>{{ pl.title }}</h2>
+            <p>{{ pl.intro }}</p>
+          </div>
+        </div>
+        <div class='grid g3'>
+          {% for it in pl.items %}
+            <div class='card rv'>
+              <div class='tx'>
+                <div class='num'>0{{ loop.index }}</div>
+                <h3>{{ it.title }}</h3>
+                <p>{{ it.text }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+{% include "partials/cta-band.njk" %}

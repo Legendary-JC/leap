@@ -1,0 +1,42 @@
+{
+  "name": "LEAP Canada",
+  "short": "LEAP",
+  "fullName": "Loveworld Economic Advancement Program",
+  "tagline": "Raising a thriving community of economically empowered believers in Canada who build generational wealth and finance the Gospel.",
+  "description": "A strategic blueprint for Loveworld Nation members in Canada to accelerate careers, launch businesses and build generational wealth.",
+  "eyebrow": "Be empowered · Build wealth · Impact nations",
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "About LEAP", "url": "/about/" },
+    { "label": "The Blueprint", "url": "/blueprint/" },
+    { "label": "Resources", "url": "/resources/" },
+    { "label": "Contact", "url": "/contact/" },
+    { "label": "Get Involved", "url": "/get-involved/" }
+  ],
+  "cta": { "label": "Join LEAP", "url": "/get-involved/" },
+  "scripture": {
+    "ref": "Exodus 31:1–5",
+    "text": "God spoke to Moses: “See what I’ve done; I’ve personally chosen Bezalel son of Uri, son of Hur of the tribe of Judah. I’ve filled him with the Spirit of God, giving him skill, know-how, and expertise in every kind of craft: to create designs and work in gold, silver, and bronze; to cut and set gemstones; to carve wood; he’s an all-around craftsman.”"
+  },
+  "concept": "A comprehensive and strategic blueprint for an economic advancement program tailored to Loveworld Nation members in Canada. This framework bridges Loveworld Nation’s core spiritual principles of flourishing and dominion with practical, actionable economic strategies suited for the Canadian landscape.",
+  "vision": "To raise a thriving community of economically empowered believers in Canada who dominate their respective industries, build generational wealth, and serve as financial pillars for the global expansion of the Gospel.",
+  "mission": "To equip our members with the spiritual wisdom, practical skills, and strategic networks required to accelerate their careers, launch successful businesses, and achieve financial independence within the competitive Canadian economy.",
+  "blueprintIntro": "This blueprint is designed to be highly collaborative, leveraging the existing expertise within the congregation and networking with appropriate economic agencies, while providing structured support for those looking to advance.",
+  "event": {
+    "eyebrow": "Upcoming",
+    "title": "Together we build",
+    "text": "Join our upcoming events and be part of a community that builds faith, skills and strategies for lasting impact.",
+    "tags": ["Connect", "Learn", "Grow", "Make an impact"],
+    "registerUrl": "https://forms.gle/73ahKTnstAM33GeR9"
+  },
+  "words": ["Wealth", "Impact", "Nation"],
+  "closing": {
+    "title": "Together, we build wealth. We finance the Gospel. We impact generations.",
+    "text": "Join LEAP and become part of a community equipped to excel, empower and expand the Kingdom."
+  },
+  "contact": { "email": "info@leapcanada.org", "location": "", "phone": "" },
+  "footerQuote": {
+    "text": "…to equip the saints for the work of ministry, for building up the body of Christ.",
+    "ref": "Ephesians 4:12"
+  }
+}

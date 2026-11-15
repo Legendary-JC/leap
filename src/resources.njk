@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+pageKey: resources
+permalink: /resources/
+---
+
+{% set hp = pages.resources %}
+{% include "partials/page-hero.njk" %}
+
+<section>
+  <div class='wrap'>
+    <div class='tabs rv'>
+      <button class='tab on' data-cat='all'>All</button>
+      {% for pl in pages.blueprint.pillars %}
+        <button class='tab' data-cat='{{ pl.id }}'>
+          {{ pl.short }}
+        </button>
+      {% endfor %}
+    </div>
+    <div class='grid g3' style='margin-top:30px'>
+      {% for pl in pages.blueprint.pillars %}
+        {% for it in pl.items %}
+          <a
+            class='card rv'
+            data-cat='{{ pl.id }}'
+            href="{{ ('/blueprint/#pillar-' ~ pl.number) | url }}"
+          >
+            <div class='tx'>
+              <div class='num'>
+                PILLAR {{ pl.number }} · {{ pl.short | upper }}
+              </div>
+              <h3>{{ it.title }}</h3>
+              <p>{{ it.text | truncate(120) }}</p>
+              <span class='tag'>Materials coming soon</span>
+            </div>
+          </a>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta-band.njk" %}

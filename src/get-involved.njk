@@ -1,0 +1,75 @@
+---
+layout: layouts/base.njk
+pageKey: getInvolved
+permalink: /get-involved/
+---
+
+{% set hp = pages.getInvolved %}
+{% include "partials/page-hero.njk" %}
+
+<section>
+  <div class='wrap'>
+    <div class='eyebrow rv'>Ways to join</div>
+    <h2 class='h2 rv'>Find your place in LEAP</h2>
+    <div class='grid g3'>
+      {% for w in hp.ways %}
+        <div class='card rv'>
+          <div class='tx'>
+            <div class='ic'>{{ w.icon }}</div>
+            <h3>{{ w.title }}</h3>
+            <p>{{ w.text }}</p>
+            {% if w.title == "Attend an event" %}
+              <p style='margin-top:10px'>
+                <a
+                  href='{{ site.event.registerUrl }}'
+                  target='_blank'
+                  rel='noopener'
+                  style='color:var(--gold);font-weight:600'
+                >Register now →</a>
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section style='background:var(--bg2)'>
+  <div class='wrap'>
+    <div class='contact'>
+      <div>
+        <div class='eyebrow rv'>Join LEAP</div>
+        <h2 class='h2 rv'>Tell us about you</h2>
+        <p class='lead rv'>Share a few details and we will be in touch.</p>
+      </div>
+      <form class='fm rv' data-form>
+        <label>
+          Full name
+          <input name='name' required />
+        </label>
+        <label>
+          Email
+          <input name='email' type='email' required />
+        </label>
+        <label>
+          I am interested in
+          <select name='interest'>
+            {% for pl in pages.blueprint.pillars %}
+              <option>
+                {{ pl.title }}
+              </option>
+            {% endfor %}
+            <option>Mentoring or sharing my expertise</option>
+          </select>
+        </label>
+        <label>
+          Anything else?
+          <textarea name='notes' rows='4'></textarea>
+        </label>
+        <button class='btn' type='submit'>Submit</button>
+        <div class='ok'></div>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,136 @@
+---
+layout: layouts/base.njk
+pageKey: home
+permalink: /
+---
+<section class='hero'>
+  <div class='orb o1'></div>
+  <div class='orb o2'></div>
+  <div class='wrap hg'>
+    <div>
+      <div class='eyebrow badge rv'>
+        <span class='dot'></span>
+        {{ site.eyebrow }}
+      </div>
+      <h1 class='rv'>
+        Loveworld Economic
+        <em>Advancement</em>
+        Program
+      </h1>
+      <p class='rv'>{{ site.tagline }}</p>
+      <div class='cta rv'>
+        <a class='btn' href='{{ site.cta.url | url }}'>{{ site.cta.label }}</a>
+        <a class='btn o' href='#pillars'>Explore the Pillars</a>
+      </div>
+    </div>
+    {% include "art/hero.njk" %}
+    <div class='chip c1'>💼 Career</div>
+    <div class='chip c2'>🚀 Business</div>
+    <div class='chip c3'>💰 Wealth</div>
+  </div>
+</section>
+
+<div class='mq' aria-hidden='true'>
+  <div class='mt'>
+    {% for r in [1, 2] %}
+      {% for pl in pages.blueprint.pillars %}
+        <span>
+          {{ pl.short }}
+        </span>
+        <span>✦</span>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+
+<section class='verse'>
+  <div class='wrap rv'>
+    <blockquote class='long'>{{ site.scripture.text }}</blockquote>
+    <cite>{{ site.scripture.ref | upper }}</cite>
+  </div>
+</section>
+
+<section>
+  <div class='wrap split'>
+    {% include "art/network.njk" %}
+    <div>
+      <div class='eyebrow rv'>About LEAP</div>
+      <h2 class='h2 rv'>Faith and finance, working together</h2>
+      <p class='lead rv'>{{ pages.about.lead }}</p>
+      <div class='stack'>
+        {% for s in pages.home.summary %}
+          <div class='mini rv'>
+            <div class='ic'>{{ s.icon }}</div>
+            <div>
+              <b>{{ s.title }}</b>
+              <p>{{ s.text }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class='cta rv'>
+        <a class='btn d' href="{{ '/about/' | url }}">Read more about LEAP</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id='pillars' style='background:var(--bg2)'>
+  <div class='wrap'>
+    <div class='eyebrow rv'>The Blueprint</div>
+    <h2 class='h2 rv'>Four strategic pillars</h2>
+    <p class='lead rv'>{{ site.blueprintIntro }}</p>
+    <div class='grid'>
+      {% for pl in pages.blueprint.pillars %}
+        <a
+          class='card rv'
+          href="{{ ('/blueprint/#pillar-' ~ pl.number) | url }}"
+        >
+          {% include "art/pillar-" ~ pl.number ~ ".njk" %}
+          <div class='tx'>
+            <div class='num'>PILLAR {{ pl.number }}</div>
+            <h3>{{ pl.title }}</h3>
+            <p>{{ pl.intro }}</p>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+    <div class='more rv'>
+      <p>Want to know more about our pillars?</p>
+      <a class='btn d' href="{{ '/blueprint/' | url }}">Read the Blueprint</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class='wrap'>
+    <div class='eyebrow rv'>Recent events</div>
+    <h2 class='h2 rv'>{{ site.event.tags | join(" · ") }}</h2>
+    <p class='lead rv'>{{ site.event.text }}</p>
+    <div class='event rv'>
+      <div>
+        <div class='eyebrow'>{{ site.event.eyebrow }}</div>
+        <h3>{{ site.event.title }}</h3>
+        <p style='color:var(--mute);margin:0'>
+          A community equipped to excel, empower and expand the Kingdom.
+        </p>
+        <div class='tags'>
+          {% for t in site.event.tags %}
+            <span>
+              {{ t }}
+            </span>
+          {% endfor %}
+        </div>
+        <a
+          class='btn'
+          href='{{ site.event.registerUrl }}'
+          target='_blank'
+          rel='noopener'
+        >Register now</a>
+      </div>
+      {% include "art/poster.njk" %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta-band.njk" %}

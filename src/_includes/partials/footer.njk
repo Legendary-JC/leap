@@ -1,0 +1,43 @@
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <a href="{{ '/' | url }}" class="logo"><i>L</i>{{ site.short }}</a>
+        <p class="ft-name">{{ site.fullName }}</p>
+        <p>{{ site.description }}</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          {% for item in site.nav %}
+            <li><a href="{{ item.url | url }}">{{ item.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Our pillars</h4>
+        <ul>
+          {% for pl in pages.blueprint.pillars %}
+            <li><a href="{{ ('/blueprint/#pillar-' ~ pl.number) | url }}">{{ pl.short }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>{{ site.contact.email or "Email to be added" }}</li>
+          <li>{{ site.contact.location or "Location to be added" }}</li>
+          <li><a class="ft-btn" href="{{ site.event.registerUrl }}" target="_blank" rel="noopener">Register for an event</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ft-bottom">
+      <span>© {{ "" | year }} {{ site.fullName }}</span>
+      <span class="ft-quote">“{{ site.footerQuote.text }}” – {{ site.footerQuote.ref }}</span>
+    </div>
+  </div>
+</footer>
