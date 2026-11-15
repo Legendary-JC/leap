@@ -1,4 +1,10 @@
 {
+  "logo": {
+    "src": "/img/leap_logo.png",
+    "alt": "LEAP Canada logo",
+    "showText": false
+  },
+
   "name": "LEAP Canada",
   "short": "LEAP",
   "fullName": "Loveworld Economic Advancement Program",

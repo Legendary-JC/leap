@@ -2,7 +2,7 @@
   <div class="wrap">
     <div class="ft-grid">
       <div class="ft-brand">
-        <a href="{{ '/' | url }}" class="logo"><i>L</i>{{ site.short }}</a>
+        {% include "partials/logo.njk" %}
         <p class="ft-name">{{ site.fullName }}</p>
         <p>{{ site.description }}</p>
       </div>

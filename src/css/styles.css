@@ -177,3 +177,9 @@ footer.ft .wrap{display:block}
 .ft-quote{max-width:520px}
 @media(max-width:960px){.ft-grid{grid-template-columns:1fr 1fr;gap:36px}.ft-brand{grid-column:1/-1}}
 @media(max-width:560px){footer.ft{padding-top:48px}.ft-grid{grid-template-columns:1fr 1fr;gap:30px 20px}.ft-bottom{flex-direction:column}}
+
+
+
+.logo-img{height:38px;width:auto;display:block}
+.ft-brand .logo-img{height:46px}
+@media(max-width:860px){.logo-img{height:34px}}

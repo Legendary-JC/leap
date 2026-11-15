@@ -1,0 +1,8 @@
+<a href="{{ '/' | url }}" class="logo">
+  {% if site.logo.src %}
+    <img src="{{ site.logo.src | url }}" alt="{{ site.logo.alt }}" class="logo-img">
+    {% if site.logo.showText %}{{ site.short }}{% endif %}
+  {% else %}
+    <i>L</i>{{ site.short }}
+  {% endif %}
+</a>

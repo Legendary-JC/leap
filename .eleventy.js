@@ -1,7 +1,7 @@
 // Eleventy configuration – LEAP Canada
 module.exports = function (eleventyConfig) {
   // Copy static assets straight to the output folder
-  eleventyConfig.addPassthroughCopy({ "src/css": "css", "src/js": "js" });
+  eleventyConfig.addPassthroughCopy({ "src/css": "css", "src/js": "js", "src/img": "img" });
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
 
   return {
