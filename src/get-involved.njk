@@ -43,7 +43,13 @@ permalink: /get-involved/
         <h2 class='h2 rv'>Tell us about you</h2>
         <p class='lead rv'>Share a few details and we will be in touch.</p>
       </div>
-      <form class='fm rv' data-form>
+
+      <form class='fm rv' data-form data-endpoint='{{ site.forms.endpoint }}'>
+        <input type='hidden' name='access_key' value='{{ site.forms.accessKey }}' />
+        <input type='hidden' name='subject' value='New LEAP signup (Get Involved)' />
+        <input type='hidden' name='from_name' value='LEAP Canada website' />
+        <input type='checkbox' name='botcheck' style='display:none' tabindex='-1' autocomplete='off' />
+
         <label>
           Full name
           <input name='name' required />
@@ -56,11 +62,9 @@ permalink: /get-involved/
           I am interested in
           <select name='interest'>
             {% for pl in pages.blueprint.pillars %}
-              <option>
-                {{ pl.title }}
-              </option>
+              <option value='{{ pl.title }}'>{{ pl.title }}</option>
             {% endfor %}
-            <option>Mentoring or sharing my expertise</option>
+            <option value='Mentoring or sharing my expertise'>Mentoring or sharing my expertise</option>
           </select>
         </label>
         <label>
