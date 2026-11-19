@@ -48,7 +48,13 @@ permalink: /contact/
           </div>
         </div>
       </div>
-      <form class='fm rv' data-form>
+
+      <form class='fm rv' data-form data-endpoint='{{ site.forms.endpoint }}'>
+        <input type='hidden' name='access_key' value='{{ site.forms.accessKey }}' />
+        <input type='hidden' name='subject' value='New message from the LEAP Canada website (Contact)' />
+        <input type='hidden' name='from_name' value='LEAP Canada website' />
+        <input type='checkbox' name='botcheck' style='display:none' tabindex='-1' autocomplete='off' />
+
         <label>
           Name
           <input name='name' required />
